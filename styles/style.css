@@ -10,8 +10,64 @@ It looks like we have 2 main sections, a containing element with the text flowin
 Position the Spotify logo absolutely according to the green div.
 */
 
-* {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
 
+p {
+  font-weight: 100;
+}
+
+.green-area {
+  background-color: #00b172;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+}
+
+.green-area h3 {
+  width: 20vw;
+  font-size: 1.2em;
+  line-height: 3.5em;
+}
+.green-area h2 {
+  width: 40vw;
+  font-size: 2em;
+  text-decoration: underline;
+  line-height: 2em;
+}
+
+.green-area p {
+  width: 20vw;
+  font-size: 1em;
+}
+
+.parent-of-icon {
+  position: relative;
+}
+
+.on-green-icon {
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+}
+
+.Spotify-App {
+  margin-top: 30%;
+  width: 230px;
+}
